@@ -1,4 +1,4 @@
 baseURL = 'https://stewartbiology.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'stewartbiology.com'
 theme = 'ananke'
