@@ -26,6 +26,11 @@ url = "https://drive.google.com/file/d/1bpDX37iYolYQsll5DwtDu7P2OUzlVteA/view?us
 weight = 30
 
 [[menus.main]]
-name = "List of Publications"
-url = "/list-of-publications/"
+name = "Presentations"
+url = "/presentations/"
 weight = 40
+
+[[menus.main]]
+name = "Publications"
+url = "/publications/"
+weight = 50

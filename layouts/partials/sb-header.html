@@ -1,0 +1,12 @@
+<header class="sb-site-header">
+  <nav class="sb-nav" aria-label="Main navigation">
+    <a class="sb-brand" href="{{ .Site.Home.RelPermalink }}">Jonathan Stewart</a>
+    {{ with .Site.Menus.main }}
+      <ul class="sb-menu">
+        {{ range . }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </nav>
+</header>
