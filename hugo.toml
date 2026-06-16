@@ -6,7 +6,7 @@ theme = "ananke"
 enableRobotsTXT = true
 
 [params]
-description = "Shellfish biologist studying coastal ecotoxicology, PFAS-free AFFFs, and shellfish health."
+description = "Environmental toxicology PhD student studying how contaminants affect human and environmental health."
 body_classes = "stewart-home"
 custom_css = ["css/stewart-home.css"]
 
@@ -31,6 +31,18 @@ url = "/presentations/"
 weight = 40
 
 [[menus.main]]
+name = "Projects"
+identifier = "projects"
+url = "/projects/"
+weight = 50
+
+[[menus.main]]
+name = "AFFF alternatives"
+parent = "projects"
+url = "/projects/afff-alternatives/"
+weight = 10
+
+[[menus.main]]
 name = "Publications"
 url = "/publications/"
-weight = 50
+weight = 60

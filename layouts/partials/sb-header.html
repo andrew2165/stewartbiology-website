@@ -4,7 +4,16 @@
     {{ with .Site.Menus.main }}
       <ul class="sb-menu">
         {{ range . }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          <li class="sb-menu-item{{ if .Children }} sb-menu-item-has-children{{ end }}">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ with .Children }}
+              <ul class="sb-submenu">
+                {{ range . }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </li>
         {{ end }}
       </ul>
     {{ end }}

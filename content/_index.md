@@ -1,14 +1,14 @@
 ---
 title: "Jonathan Stewart, M.S."
-description: "Shellfish Biologist with NOAA/NCCOS coastal ecotoxicology experience."
+description: "PhD student in Environmental Toxicology at the University of California, Riverside."
 portrait: "/images/jonathan-stewart-home.jpg"
-email: "stewart.jonathan.a@gmail.com"
+email: "jonathan.stewart@email.ucr.edu"
 resume_url: "https://drive.google.com/file/d/1bpDX37iYolYQsll5DwtDu7P2OUzlVteA/view?usp=share_link"
 cv_url: "https://drive.google.com/file/d/1xZok07WyOP-T-Nb8HH4jQI-ZROvsTPc-/view?usp=share_link"
 role_lines:
-  - "Shellfish Biologist"
-  - "CSS on contract to NOAA, National Ocean Service"
-  - "Ecotoxicology Branch, National Center for Coastal Ocean Science"
+  - "PhD Student in Environmental Toxicology"
+  - "University of California, Riverside"
+  - "Genereux Lab"
 social_links:
   - name: "LinkedIn"
     url: "https://www.linkedin.com/in/jonathan-stewart-052129160/"
@@ -26,8 +26,8 @@ social_links:
 
 ## About Me
 
-For the past three years I have studied PFAS-free Aqueous Film-Forming Foams (AFFFs) and their effects on the Eastern oyster (_Crassostrea virginica_) and Hard clams (_Mercenaria mercenaria_) with the NOAA/NCCOS Ecotoxicology Branch in Charleston, SC ([click here to learn more](https://serdp-estcp.org/projects/details/230d4a7e-2bc2-4387-987d-91988ba59544)).
+I am a PhD student in Environmental Toxicology at the University of California, Riverside in the Genereux Lab. My work is broadly motivated by how contaminants, including PFAS and heavy metals, move through biological and environmental systems and shape human and environmental health.
 
-I have also worked on a number of smaller projects ranging from mechanisms of oyster shell growth to developing new anti-biofouling paints and a number of fun side projects along the way!
+I am especially interested in understanding contaminant effects in both individual and mixture contexts, where real-world exposures rarely happen one chemical at a time. My research interests sit at the intersection of exposure, mechanism, and impact, with an emphasis on asking questions that connect molecular or organismal responses to broader environmental health outcomes.
 
-I was even highlighted by a local news station for my research! [Click here to watch!](https://abcnews4.com/newsletter-daily/former-cofc-college-of-charleston-graduate-student-jonathan-stewart-studies-effects-of-pfas-on-oysters-afff-firefighting-foams-wciv)
+Placeholder: this section will be updated with a more specific description of my doctoral research as projects develop.

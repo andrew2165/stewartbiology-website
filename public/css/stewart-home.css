@@ -25,7 +25,8 @@
 }
 
 .sb-brand,
-.sb-menu a {
+.sb-menu a,
+.sb-submenu a {
   color: #202124;
   text-decoration: none;
 }
@@ -46,6 +47,10 @@
   padding: 0;
 }
 
+.sb-menu-item {
+  position: relative;
+}
+
 .sb-menu a {
   border-bottom: 2px solid transparent;
   display: inline-block;
@@ -56,6 +61,39 @@
 .sb-menu a:focus,
 .sb-menu a:hover {
   border-bottom-color: #05d3ff;
+  color: #000;
+}
+
+.sb-submenu {
+  background: #fff;
+  border: 1px solid #ededed;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 190px;
+  padding: 8px 0;
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+
+.sb-menu-item-has-children:focus-within .sb-submenu,
+.sb-menu-item-has-children:hover .sb-submenu {
+  display: block;
+}
+
+.sb-submenu a {
+  border-bottom: 0;
+  display: block;
+  font-size: 14px;
+  padding: 10px 14px;
+}
+
+.sb-submenu a:focus,
+.sb-submenu a:hover {
+  background: #f7f7f7;
   color: #000;
 }
 
@@ -236,8 +274,24 @@
   }
 
   .sb-menu {
+    align-items: flex-start;
+    flex-direction: column;
     gap: 16px;
     justify-content: flex-start;
+  }
+
+  .sb-submenu {
+    border: 0;
+    box-shadow: none;
+    display: block;
+    margin: 0 0 0 16px;
+    min-width: 0;
+    padding: 0;
+    position: static;
+  }
+
+  .sb-submenu a {
+    padding: 4px 0;
   }
 
   .sb-home {

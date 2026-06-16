@@ -1,0 +1,22 @@
+{{ define "header" }}
+  {{ partial "sb-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article class="sb-page">
+    <header class="sb-page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="sb-page-content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "sb-footer.html" . }}
+{{ end }}
