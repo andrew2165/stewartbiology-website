@@ -1,0 +1,14 @@
+[Unit]
+Description=Stewart Biology static website
+
+[Container]
+Image=localhost/stewartbiology:latest
+ContainerName=stewartbiology
+PublishPort=127.0.0.1:8088:8080
+LogDriver=journald
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
