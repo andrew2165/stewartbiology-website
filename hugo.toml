@@ -1,4 +1,31 @@
-baseURL = 'https://stewartbiology.com/'
-languageCode = 'en-us'
-title = 'stewartbiology.com'
-theme = 'ananke'
+baseURL = "https://stewartbiology.com/"
+locale = "en-US"
+title = "Jonathan Stewart"
+theme = "ananke"
+
+enableRobotsTXT = true
+
+[params]
+description = "Shellfish biologist studying coastal ecotoxicology, PFAS-free AFFFs, and shellfish health."
+body_classes = "stewart-home"
+custom_css = ["css/stewart-home.css"]
+
+[[menus.main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[menus.main]]
+name = "CV"
+url = "https://drive.google.com/file/d/1xZok07WyOP-T-Nb8HH4jQI-ZROvsTPc-/view?usp=share_link"
+weight = 20
+
+[[menus.main]]
+name = "Resume"
+url = "https://drive.google.com/file/d/1bpDX37iYolYQsll5DwtDu7P2OUzlVteA/view?usp=sharing"
+weight = 30
+
+[[menus.main]]
+name = "List of Publications"
+url = "/list-of-publications/"
+weight = 40

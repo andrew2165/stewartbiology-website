@@ -1,0 +1,62 @@
+{{ define "header" }}
+  <header class="sb-site-header">
+    <nav class="sb-nav" aria-label="Main navigation">
+      <a class="sb-brand" href="{{ .Site.Home.RelPermalink }}">Jonathan Stewart</a>
+      {{ with .Site.Menus.main }}
+        <ul class="sb-menu">
+          {{ range . }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </nav>
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <article class="sb-home">
+    <section class="sb-intro" aria-labelledby="home-title">
+      <div class="sb-portrait-wrap">
+        {{/* TODO: Replace this copied Google Sites image with the original full-resolution/source-owned portrait before launch. */}}
+        <img class="sb-portrait" src="{{ .Params.portrait }}" alt="Jonathan Stewart">
+      </div>
+
+      <div class="sb-profile">
+        <h1 id="home-title">{{ .Title }}</h1>
+
+        {{ with .Params.social_links }}
+          <ul class="sb-socials" aria-label="Social links">
+            {{ range . }}
+              <li>
+                {{/* TODO: Replace copied Google Sites social icons with final source-owned assets before launch. */}}
+                <a class="sb-social sb-social-{{ .class }}" href="{{ .url }}" aria-label="{{ .name }}" target="_blank" rel="noopener noreferrer">
+                  <img src="{{ .icon }}" alt="">
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+
+        <div class="sb-contact">
+          {{ range .Params.role_lines }}
+            <p>{{ . }}</p>
+          {{ end }}
+          <p><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+        </div>
+
+        <div class="sb-doc-links" aria-label="Professional documents">
+          <a href="{{ .Params.resume_url }}" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="{{ .Params.cv_url }}" target="_blank" rel="noopener noreferrer"><em>Curriculum vitae</em></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sb-about">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}
+
+{{ define "footer" }}
+  <footer class="sb-footer" aria-label="Site footer"></footer>
+{{ end }}

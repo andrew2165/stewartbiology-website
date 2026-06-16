@@ -1,0 +1,210 @@
+.stewart-home {
+  background: #fff;
+  color: #212121;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+.stewart-home main {
+  padding-bottom: 0;
+}
+
+.sb-site-header {
+  background: #fff;
+  border-bottom: 1px solid #ededed;
+}
+
+.sb-nav {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 18px 28px;
+}
+
+.sb-brand,
+.sb-menu a {
+  color: #202124;
+  text-decoration: none;
+}
+
+.sb-brand {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sb-menu {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sb-menu a {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.sb-menu a:focus,
+.sb-menu a:hover {
+  border-bottom-color: #05d3ff;
+  color: #000;
+}
+
+.sb-home {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 56px 28px 72px;
+}
+
+.sb-intro {
+  align-items: center;
+  display: grid;
+  gap: 56px;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(280px, 1.05fr);
+}
+
+.sb-portrait {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.sb-profile {
+  text-align: center;
+}
+
+.sb-profile h1 {
+  color: #000;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.sb-socials {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 26px;
+  padding: 0;
+}
+
+.sb-social {
+  align-items: center;
+  border-radius: 0;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+.sb-social img {
+  height: 36px;
+  width: 36px;
+}
+
+.sb-social-linkedin {
+  background: #2867b2;
+}
+
+.sb-social-twitter {
+  background: #1b9df0;
+}
+
+.sb-social-instagram {
+  background: #fe005c;
+}
+
+.sb-contact {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.28;
+  margin: 0 auto;
+  max-width: 430px;
+}
+
+.sb-contact p {
+  margin: 0 0 8px;
+}
+
+.sb-contact a,
+.sb-doc-links a,
+.sb-about a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sb-doc-links {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  margin-top: 28px;
+}
+
+.sb-about {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.55;
+  margin-top: 56px;
+  max-width: 760px;
+}
+
+.sb-about h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.sb-about p {
+  margin: 0 0 20px;
+}
+
+@media (max-width: 760px) {
+  .sb-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .sb-menu {
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .sb-home {
+    padding: 32px 20px 56px;
+  }
+
+  .sb-intro {
+    gap: 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .sb-portrait-wrap {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  .sb-profile h1 {
+    font-size: 30px;
+  }
+
+  .sb-about {
+    margin-top: 42px;
+  }
+}
