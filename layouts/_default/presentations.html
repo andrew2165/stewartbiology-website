@@ -1,0 +1,43 @@
+{{ define "header" }}
+  {{ partial "sb-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <article class="sb-page">
+    <header class="sb-page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="sb-page-content">
+      {{ .Content }}
+
+      <div class="sb-entry-list">
+        {{ range sort hugo.Data.presentations.presentations "sort_date" "desc" }}
+          <article class="sb-entry">
+            <p class="sb-entry-meta">{{ .year }}{{ with .category }} &middot; {{ . }}{{ end }}</p>
+            <h2>{{ .title | markdownify }}</h2>
+            {{ with .authors }}
+              <p>{{ . | markdownify }}</p>
+            {{ end }}
+            {{ with .venue }}
+              <p>{{ . }}</p>
+            {{ end }}
+            {{ if .url }}
+              <p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .link_label }}</a></p>
+            {{ end }}
+            {{ with .note }}
+              <p class="sb-entry-note">{{ . }}</p>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </article>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "sb-footer.html" . }}
+{{ end }}

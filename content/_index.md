@@ -6,9 +6,10 @@ email: "jonathan.stewart@email.ucr.edu"
 resume_url: "https://drive.google.com/file/d/1bpDX37iYolYQsll5DwtDu7P2OUzlVteA/view?usp=share_link"
 cv_url: "https://drive.google.com/file/d/1xZok07WyOP-T-Nb8HH4jQI-ZROvsTPc-/view?usp=share_link"
 role_lines:
-  - "PhD Student in Environmental Toxicology"
-  - "University of California, Riverside"
+  - "PhD Student"
   - "Genereux Lab"
+  - "Environmental Toxicology Program"
+  - "University of California, Riverside"
 social_links:
   - name: "LinkedIn"
     url: "https://www.linkedin.com/in/jonathan-stewart-052129160/"
